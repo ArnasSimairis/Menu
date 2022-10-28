@@ -1,0 +1,82 @@
+body {
+  background-color: #161616;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10%;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  right: -1200px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#main-menu.active {
+  right: 0;
+}
+
+#main-menu ul li {
+  list-style: none;
+  color: white;
+  font-size: 40px;
+  padding: 20px 24px;
+}
+
+.burger_button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: translate(0, 11px) rotate(-45deg);
+          transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: translate(0, -11px) rotate(45deg);
+          transform: translate(0, -11px) rotate(45deg);
+}
+/*# sourceMappingURL=main.css.map */

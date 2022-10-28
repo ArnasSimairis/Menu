@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./style/main.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <div class="burger_button" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </header>
+            <div id="main-menu">
+            <ul>
+                <li>Home</li>
+                <li>Work</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>  
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            document.getElementById('main-menu').classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
